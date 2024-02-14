@@ -1,0 +1,136 @@
+.main {
+    width: 100%;
+    background-color: #121139;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos no container esquerdo */
+.container-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-left-itens {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+#first-h1 {
+    font-size: 5rem;
+    background: linear-gradient(to right, #F44E77, #812DE2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+#second-h1 {
+    font-size: 5rem;
+    color: #CAD6F1;
+    margin-bottom: 3rem;
+}
+
+.container-letft-description {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.container-letft-description > p {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+#btn-description {
+    height: 5rem;
+    width: 20rem;
+    background-color: #121139;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+}
+
+#btn-description > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#btn-description::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 200%;
+    background: linear-gradient(to right, #F44E77, #812DE2);
+    top: 0;
+    right: 0;
+    animation: animate 3s linear infinite;
+    z-index: -1;
+}
+
+#btn-description::after {
+    content: "";
+    position: absolute;
+    background-color: #121139;
+    inset: 3px;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+/* Estilos no container direito */
+.container-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.container-right > img {
+    max-width: 100%;
+    margin-top: 10rem;
+    background: linear-gradient(to right, #F44E77 0%, #F44E77 50%, #812DE2 50%, #812DE2 100%);
+    /* Adicione uma sombra à cor #F44E77 no lado esquerdo */
+    box-shadow: -15px 15px 30px rgba(244, 78, 119, 0.5),
+                /* Adicione uma sombra à cor #812DE2 no lado direito */
+                15px 15px 30px rgba(129, 45, 226, 0.5);
+    border-radius: 3rem;
+}
+
+.clients {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+.clients-logo {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 5rem;
+}
+
+
+@media (max-width: 995px) {
+    .container-left {
+        width: 100%;
+    }
+
+    .container-right {
+        width: 100%;
+        margin-top: 3rem;
+    }
+}
