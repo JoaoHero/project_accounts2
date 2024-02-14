@@ -1,3 +1,3 @@
 ## Recriando projeto accounts mas com conexão frontend e beckend
 
-## Tecnologias que serão utilizadas: ReactJs, NodeJS e MySql
+# Criando sistema de banco funcional, com cadastro, login, validação de e-mail e transações entre as contas cadastradas. Tecnologias que serão utilizadas: ReactJs, NodeJS e MySql
