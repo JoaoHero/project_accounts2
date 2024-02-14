@@ -1,6 +1,7 @@
 import Navbar from "../layout/Navbar";
 import Container from "../components/Container";
 import SectionApp from "../components/SectionApp";
+import Footer from "../layout/Footer"
 
 import creditCarImg from "../assets/img/img-pages/card.png";
 import logoClientImg from "../assets/img/logos/LogoClient.png";
@@ -83,8 +84,9 @@ function Home() {
  
                 </section>
 
+                <Footer />
+                
             </main>
-
         </Container>
     );
 };
