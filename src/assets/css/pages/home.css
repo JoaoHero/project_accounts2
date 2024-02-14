@@ -21,7 +21,7 @@
 }
 
 #first-h1 {
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 4.5vw, 5rem);
     background: linear-gradient(to right, #F44E77, #812DE2);
     -webkit-background-clip: text;
     background-clip: text;
@@ -30,7 +30,7 @@
 }
 
 #second-h1 {
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 3.5vw, 5rem);
     color: #CAD6F1;
     margin-bottom: 3rem;
 }
@@ -131,6 +131,5 @@
 
     .container-right {
         width: 100%;
-        margin-top: 3rem;
     }
 }
