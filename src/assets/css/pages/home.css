@@ -1,8 +1,9 @@
 .main {
-    width: 100%;
+    max-width: 2000px;
     background-color: #121139;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 /* Estilos no container esquerdo */
