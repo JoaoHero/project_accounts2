@@ -105,6 +105,7 @@
     border-radius: 3rem;
 }
 
+/* Estilizando o container com as logos dos clientes na home */
 .clients {
     width: 100%;
     display: flex;
@@ -123,13 +124,86 @@
     margin: 3rem 5rem;
 }
 
+/* Section de estátisticas */
+.section-analytics {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-analytics > h1 {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    color: #CAD6F1;
+    margin-top: 10rem;
+}
+
+.section-analytics-wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.section-container-left > img {
+    width: 100%;
+}
+
+.section-container-right {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-right-description > h1 {
+    color: #FFFF;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-right-description > p {
+    color: #F2F6FF;
+    font-size: 2rem;
+}
+
+.container-right-img {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container-right-img > img {
+    max-width: 100%;
+}
 
 @media (max-width: 995px) {
-    .container-left {
+    .container-left, .container-right {
         width: 100%;
     }
+}
 
-    .container-right {
+@media (max-width: 1400px) {
+    .section-container-right {
         width: 100%;
+    }
+    
+    .section-container-left {
+        margin-bottom: 5rem;
+    }
+    
+    .container-right-img {
+        justify-content: space-evenly;
+        margin-bottom: 5rem;
+    }
+    
+    .container-right-img > img {
+        padding: 1rem 0;
     }
 }
