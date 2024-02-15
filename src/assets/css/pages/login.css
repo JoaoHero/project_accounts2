@@ -1,0 +1,32 @@
+.login-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #6C63FF;
+}
+
+.login-logo {
+    position: absolute;
+    margin: 3rem;
+}
+
+.login-img {
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+}
+
+.login-form-wrapper {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    height: 80rem;
+    width: 60rem;
+    border-radius: 5rem;
+    background-color: #FCFCFC;
+}

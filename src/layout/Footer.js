@@ -1,7 +1,5 @@
 import Logo from "../components/Logo";
 
-// eslint-disable-next-line
-import footerCss from "../assets/css/layout/footer.css";
 
 function Footer() {
     return(

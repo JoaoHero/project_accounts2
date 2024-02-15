@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"
+
 import Logo from "../components/Logo";
 import Container from "../components/Container";
+
 import { FaHome, FaBullhorn, FaComment, FaUserCircle } from "react-icons/fa";
 import { IoMenuSharp } from "react-icons/io5";
 
-// eslint-disable-next-line
-import navbarCss from "../assets/css/layout/navbar.css";
 
 function Navbar() {
 
