@@ -3,13 +3,19 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+}
+
+.form-img > img {
+
+    display: flex;
+    margin-left: 5rem;
 }
 
 .form-description {
     position: absolute;
-    top: 14rem;
-    left: 15rem;
     text-align: center;
+    margin-top: 7rem;
 }
 
 .form-description > h1 {

@@ -13,7 +13,7 @@
 
 .login-img {
     position: relative;
-    width: 40%;
+    width: 850px;
     overflow: hidden;
 }
 
@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3rem;
 }
 
 .login-form {
@@ -29,4 +30,44 @@
     width: 60rem;
     border-radius: 5rem;
     background-color: #FCFCFC;
+}
+
+.login-form-img {
+    margin-top: 3rem;
+}
+
+.login-form > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.login-form-options {
+    width: 30rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.login-form-options > a{
+    font-family: "Montserrat", sans-serif;
+    color: #6C63FF;
+    font-weight: bold;
+}
+
+.login-form > form > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1066px) {
+    .login-img {
+        display: none;
+    }
+
+    .login-main {
+        justify-content: center;
+    }
 }
