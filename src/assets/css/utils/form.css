@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     width: 30rem;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .form > input {
@@ -44,10 +44,16 @@
     color: #FFFF;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 15rem;
+    margin-top: 5rem;
 }
 
-#remember-me {
-    border: 1px solid red;
-    width: 100%;
+@media (max-width: 600px) {
+    .form, .form > input {
+        width: 20rem;
+        height: 4rem;
+    }
+
+    #login-btn {
+        margin-top: 0rem;
+    }
 }

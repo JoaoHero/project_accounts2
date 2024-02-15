@@ -27,11 +27,9 @@ function Login() {
 
                         <form action="" method="POST">
                             <Form name="email" type="email" placeholder="Digite o seu E-mail" icon={<MdOutlineMail />} />
-
                             <Form name="password" type="password" placeholder="Digite sua senha" icon={<CiLock />} />
 
                             <div className="login-form-options">
-
                                 <a href="/recoveryAccount">Esqueceu a senha ?</a>
                             </div>
 

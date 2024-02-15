@@ -3,11 +3,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
 
 .form-img > img {
-
     display: flex;
     margin-left: 5rem;
 }
@@ -26,4 +24,45 @@
 .form-description > p {
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 600px) {
+    .form-img > img {
+        margin-left: 5rem;
+        width: 100%;
+    }
+
+    .form-description {
+        margin-top: 7.5rem;
+    }
+
+    .form-description > h1 {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .form-description > p {
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+@media (max-width: 280px) {
+    .form-img > img {
+        margin-bottom: 5rem;
+    }
+
+    .form-description {
+        margin-top: 0rem;
+    }
+
+    .form-description > h1 {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .form-description > p {
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+    }
 }
