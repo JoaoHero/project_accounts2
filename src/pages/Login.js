@@ -11,7 +11,7 @@ function Login() {
         <Container>
             <main className="login-main">
                 <section className="login-img">
-                    <div className="login-logo">
+                    <div className="logo-home">
                         <a href="/"><Logo /></a>
                     </div>
                     

@@ -1,9 +1,9 @@
-.login-main {
+.register-main {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    background-color: #6C63FF;
+    background-color: #ccc;
 }
 
 .logo-home {
@@ -11,17 +11,19 @@
     margin: 3rem;
 }
 
-.login-img {
+.register-img {
     overflow: hidden;
+    width: 38%;
+    
 }
 
-.login-img > img {
+.register-img > img {
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
 
-.login-form-wrapper {
+.register-form-wrapper {
     width: 60%;
     display: flex;
     align-items: center;
@@ -30,75 +32,72 @@
     z-index: 1;
 }
 
-.login-form {
+.register-form {
     height: 80rem;
     width: 60rem;
     border-radius: 5rem;
     background-color: #FCFCFC;
 }
 
-.login-form-img {
+.register-form-img {
     margin-top: 3rem;
 }
 
-.login-form > form {
+.register-form > form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.login-form-options {
-    width: 30rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-}
-
-.login-form-options > a{
-    font-family: "Montserrat", sans-serif;
-    color: #6C63FF;
-    font-weight: bold;
-}
-
-.login-form > form > span {
+.register-form > form > span {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 3rem;
 }
 
-
 @media (max-width: 1030px) {
-    .login-img {
+    .register-img {
         display: none;
     }
 
-    .login-main {
+    .register-main {
         justify-content: center;
     }
 
-    .login-form-wrapper {
+    .register-form-wrapper {
         width: 100%;
         padding: 0;
     }
 
-    .login-form {
+    .register-form {
         height: 100%;
         width: 100%;
         border-radius: 0rem;
     }
 
-    .login-form > form {
+    .register-form-img {
+        width: 20rem;
+        margin: 5rem auto;
+    }
+
+    .register-form > form {
         margin-top: -5rem;
     }
 
-    .login-form-options {
+    .register-form-options {
         width: 20rem;
         height: 3rem;
     }
 
-    .login-form-img {
+    .register-form > form > span {
+        margin-top: 5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .register-form-img {
         width: 20rem;
-        margin: 5rem auto;
     }
 }

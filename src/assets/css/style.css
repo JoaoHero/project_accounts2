@@ -2,6 +2,8 @@
 @import url("./utils/formImg.css");
 /* Importando os estilos do utencilios do formulário */
 @import url("./utils/form.css");
+/* Importando os estilos da página de registro */
+@import url("./pages/register.css");
 /* Importando os estilos da página login */
 @import url("./pages/login.css");
 /* Importando os estilos da home */
