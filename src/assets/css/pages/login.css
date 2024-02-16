@@ -1,6 +1,6 @@
 .login-main {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     background-color: #6C63FF;
@@ -13,12 +13,13 @@
 
 .login-img {
     overflow: hidden;
+    width: 38%;
 }
 
 .login-img > img {
     object-fit: cover;
     height: 100%;
-    width: 100%;
+    width: 87%;
 }
 
 .login-form-wrapper {
