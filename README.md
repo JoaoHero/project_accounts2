@@ -1,6 +1,11 @@
 # Transfer_bank
 
-Site de banco criado para testar e aprimorar minhas habilidades de frontend e beckend. Este repositório contém o frontend.
+Foi criado um site de um banco totalmente funcional e responsivo, desenvolvido para aprimorar habilidades tanto no frontend quanto no backend, utilizando a arquitetura cliente-servidor.Aplicação web construída com React, que atua como o frontend do projeto. Ele oferece uma interface amigável e intuitiva para os usuários interagirem com os recursos fornecidos pela API do backend. O backend, por sua vez, é responsável por gerenciar os dados e a lógica de negócios por trás da aplicação.
+
+## Repositórios Relacionados
+* Frontend (Este Repositório): Contém o código fonte do frontend desenvolvido em React. Este repositório é onde a interface do usuário e a experiência do cliente são criadas e aprimoradas.
+
+* Backend (Repositório Separado): Contém a implementação da API do backend, que fornece os serviços e funcionalidades necessárias para o frontend. Ele lida com a lógica de negócios, o acesso aos dados e a comunicação com o banco de dados. Link: https://github.com/JoaoHero/project_accounts2_api
 
 ## Seções
 
