@@ -32,6 +32,7 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
 * Css3
 * Jsx
 * Javascript
+* Figma
 
 ## Como executar o projeto?
 
