@@ -21,6 +21,9 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
 
 ![image](image-1.png)
 
+![image](https://github.com/JoaoHero/project_accounts2/assets/101435425/84712e15-97b0-4b5c-941c-e24ea3cd80b6)
+
+
 </div>
 
 ## Tecnologias utilizadas
