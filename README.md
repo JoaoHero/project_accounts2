@@ -24,28 +24,11 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
   <!-- Adicione mais imagens conforme necessário -->
 </div>
 
-<div class="scroll-indicator">
-  Role para ver mais imagens
-</div>
-
 <style>
   .image-container {
-    max-height: 300px; /* Altura máxima da seção de imagens */
-    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
-  }
-
-  .image-container img {
-    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
-    display: block; /* Garante que as imagens não fiquem lado a lado */
-    margin-bottom: 10px; /* Espaçamento entre as imagens */
-  }
-
-  .scroll-indicator {
-    margin-top: 10px; /* Espaçamento entre a seção de imagens e o indicador de rolagem */
-    font-style: italic;
+    background-color: red
   }
 </style>
-
 
 ## Tecnologias utilizadas
 
