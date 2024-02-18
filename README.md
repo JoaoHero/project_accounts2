@@ -13,7 +13,7 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
 
 # Demonstração do Projeto
 
-<div class="image-container">
+<div>
 
 ![image](https://github.com/JoaoHero/project_accounts2/assets/101435425/f7839076-3032-4bd5-95da-489d1b9fb3b1)
 
@@ -21,14 +21,7 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
 
 ![image](image-1.png)
 
-  <!-- Adicione mais imagens conforme necessário -->
 </div>
-
-<style>
-  .image-container {
-    background-color: red
-  }
-</style>
 
 ## Tecnologias utilizadas
 
