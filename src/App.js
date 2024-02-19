@@ -3,8 +3,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/Login"
 import Register from "./pages/Register"
-// eslint-disable-next-line
-import style from "./assets/css/style.css";
 
 function App() {
   return (
