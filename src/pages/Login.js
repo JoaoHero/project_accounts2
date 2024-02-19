@@ -3,11 +3,23 @@ import Container from "../components/Container";
 import Logo from "../components/Logo";
 import Form from "../components/Form"
 import FormImgDinamic from "../components/FormImg";
+import loginService from "../services/loginService";
+import { useState } from "react";
 
 import { CiLock } from "react-icons/ci";
 import { MdOutlineMail } from "react-icons/md";
 
 function Login() {
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        loginService({ email, password})
+    }
+
     return(
         <Container>
             <main className={styles.login_main}>
@@ -26,9 +38,9 @@ function Login() {
                             <FormImgDinamic tittle="Bem vindo de volta" phrase="Não perca tempo! Acesse sua conta."/>
                         </div>
 
-                        <form action="" method="POST">
-                            <Form name="email" type="email" placeholder="Digite o seu E-mail" icon={<MdOutlineMail />} />
-                            <Form name="password" type="password" placeholder="Digite sua senha" icon={<CiLock />} />
+                        <form onSubmit={handleSubmit}>
+                            <Form name="email" type="email" placeholder="Digite o seu E-mail" onChange={event => setEmail(event.target.value)} icon={<MdOutlineMail />} />
+                            <Form name="password" type="password" placeholder="Digite sua senha" onChange={event => setPassword(event.target.value)} icon={<CiLock />} />
 
                             <div className={styles.login_form_options}>
                                 <a href="/recoveryAccount">Esqueceu a senha ?</a>
