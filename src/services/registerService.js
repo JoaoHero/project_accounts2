@@ -1,4 +1,4 @@
-function registerUser({ name, email, cpf, password }) {
+function registerService({ name, email, cpf, password}) {
 
     const user = {
         name: name,
@@ -25,4 +25,4 @@ function registerUser({ name, email, cpf, password }) {
     });
 };
 
-export default registerUser;
+export default registerService;

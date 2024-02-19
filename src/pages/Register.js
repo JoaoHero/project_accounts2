@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Logo from "../components/Logo";
 import Form from "../components/Form"
 import FormImgDinamic from "../components/FormImg";
-import registerUser from "../services/registerService";
+import registerService from "../services/registerService"
 import { useState } from "react";
 
 import { MdPerson } from "react-icons/md";
@@ -12,17 +12,18 @@ import { MdOutlineMail } from "react-icons/md";
 import { CiLock } from "react-icons/ci";
 import registerImg from "../assets/img/img-pages/transaction-img.jpg"
 
-function Login() {
 
-    const [name, setName] = useState('');
-    const [cpf, setCpf] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+function Register() {
 
-    const handleSubmit  = (event) => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [cpf, setCpf] = useState("");
+    const [password, setPassword] = useState("");
+
+    function handleSubmit(event) {
         event.preventDefault();
 
-        registerUser({ name, email, cpf, password }); // Chame a função do serviço de registro com os dados do formulário
+        registerService({ name, email, cpf, password });
     }
 
     return(
@@ -53,6 +54,7 @@ function Login() {
 
                             <span>Lembrou de sua conta ? <a href="/login">Entre já</a></span>
                         </form>
+                        
                     </div>
                 </section>
 
@@ -61,4 +63,4 @@ function Login() {
     );
 };
 
-export default Login;
+export default Register;
