@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 
-.navbar-itens {
+.navbar_itens {
     width: 20rem;
     height: 25rem;
     position: absolute;
@@ -19,7 +19,7 @@
     z-index: 1;
 }
 
-.navbar-itens > ul {
+.navbar_itens > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,30 +29,30 @@
     border: 1px solid black;
 }
 
-.navbar-itens > ul > li {
+.navbar_itens > ul > li {
     padding-top: 3rem;
     font-size: 1.5rem;
     font-weight: 600;
 
 }
 
-.navbar-itens > ul > li > a {
+.navbar_itens > ul > li > a {
     color: #fff;
     display: flex;
     align-items: center;
 }
 
-.navbar-itens svg {
+.navbar_itens svg {
     margin-right: 1rem; /* Espaço entre o ícone e o texto */
     font-size: 20px; /* Tamanho do ícone */
 }
 
-.navbar-mobile {
+.navbar_mobile {
     height: 3rem;
     display: flex;
 }
 
-.navbar-mobile > svg {
+.navbar_mobile > svg {
     color: #fff;
     font-size: 3rem;
     cursor: pointer;

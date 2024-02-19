@@ -1,16 +1,8 @@
 /* Importando os estilos do utencilios da img utilizada em login e register */
-@import url("./utils/formImg.css");
+
 /* Importando os estilos do utencilios do formulário */
-@import url("./utils/form.css");
-/* Importando os estilos da página de registro */
-@import url("./pages/register.css");
-/* Importando os estilos da página login */
-@import url("./pages/login.css");
-/* Importando os estilos da home */
-@import url("./pages/home.css");
-/* Importandos os estilos do footer */
-@import url("./layout/footer.css");
-/* Importando os estilos do navbar */
-@import url("./layout/navbar.css");
+
+
+
 /* Importando a fonte */
 @import url("./fonts/font.css");

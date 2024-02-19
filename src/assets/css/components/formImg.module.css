@@ -1,67 +1,67 @@
-.form-img {
+.form_img {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.form-img > img {
+.form_img > img {
     display: flex;
     margin-left: 5rem;
 }
 
-.form-description {
+.form_description {
     position: absolute;
     text-align: center;
     margin-top: 7rem;
 }
 
-.form-description > h1 {
+.form_description > h1 {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
 }
 
-.form-description > p {
+.form_description > p {
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 1030px) {
-    .form-img > img {
+    .form_img > img {
         margin-left: 5rem;
         width: 100%;
     }
 
-    .form-description {
+    .form_description {
         margin-top: 7.5rem;
     }
 
-    .form-description > h1 {
+    .form_description > h1 {
         font-size: 1.5rem;
         font-family: "Montserrat", sans-serif;
     }
     
-    .form-description > p {
+    .form_description > p {
         font-size: 1rem;
         font-family: "Montserrat", sans-serif;
     }
 }
 
 @media (max-width: 280px) {
-    .form-img > img {
+    .form_img > img {
         margin-bottom: 5rem;
     }
 
-    .form-description {
+    .form_description {
         margin-top: 0rem;
     }
 
-    .form-description > h1 {
+    .form_description > h1 {
         font-size: 1.5rem;
         font-family: "Montserrat", sans-serif;
     }
     
-    .form-description > p {
+    .form_description > p {
         font-size: 1rem;
         font-family: "Montserrat", sans-serif;
     }

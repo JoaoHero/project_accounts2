@@ -1,12 +1,16 @@
-function Form({ id, name, type, placeholder, icon, onChange}) {
-    return(
-        <div className="form">
-            <label htmlFor={name} className="invisible-label">{name}</label>
-                <input id={id} name={name} type={type} placeholder={placeholder} onChange={onChange}/>
+import styles from "../assets/css/components/form.module.css"
 
-            <div className="form-icon">
+function Form({ name, type, value, placeholder, icon }) {
+
+    return(
+        <div className={styles.form}>
+            <label htmlFor={name} className={styles.invisible_label}>{name}</label>
+                <input name={name} type={type} value={value} placeholder={placeholder} />
+
+            <div className={styles.form_icon}>
                 {icon}
             </div>
+            
         </div>
     );
 };

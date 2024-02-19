@@ -1,3 +1,4 @@
+import styles from "../assets/css/pages/register/register.module.css";
 import Container from "../components/Container";
 import Logo from "../components/Logo";
 import Form from "../components/Form"
@@ -26,19 +27,19 @@ function Login() {
 
     return(
         <Container>
-            <main className="register-main">
-                <section className="register-img">
-                    <div className="logo-home">
+            <main className={styles.register_main}>
+                <section className={styles.register_img}>
+                    <div className={styles.logo_home}>
                         <a href="/"><Logo /></a>
                     </div>
                     
                     <img src={registerImg} alt="principal-img-login" />
                 </section>
 
-                <section className="register-form-wrapper">
-                    <div className="register-form">
+                <section className={styles.register_form_wrapper}>
+                    <div className={styles.register_form}>
 
-                        <div className="register-form-img">
+                        <div className={styles.register_form_img}>
                             <FormImgDinamic tittle="Vamos Começar!" phrase="Crie uma conta de graça."/>
                         </div>
 
@@ -47,7 +48,8 @@ function Login() {
                             <Form name="email" type="email" placeholder="Informe seu E-mail" onChange={(event) => setEmail(event.target.value)} icon={<MdOutlineMail />} />
                             <Form name="cpf" type="text" placeholder="Informe seu CPF" onChange={(event) => setCpf(event.target.value)} icon={<FaAddressCard />}/>
                             <Form name="password" type="password" placeholder="Crie uma senha forte" onChange={(event) => setPassword(event.target.value)} icon={<CiLock />} />
-                            <Form id="login-btn" name="btn" type="submit" value="Entrar" />
+                            
+                            <input id={styles.register_btn} name="btn" type="submit" value="Entrar" />
 
                             <span>Lembrou de sua conta ? <a href="/login">Entre já</a></span>
                         </form>

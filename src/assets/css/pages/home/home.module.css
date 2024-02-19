@@ -7,13 +7,13 @@
 }
 
 /* Estilos no container esquerdo */
-.container-left {
+.container_left {
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
-.container-left-itens {
+.container_left_itens {
     width: 60%;
     display: flex;
     align-items: flex-start;
@@ -21,7 +21,7 @@
     margin-top: 10rem;
 }
 
-#first-h1 {
+#first_h1 {
     font-size: clamp(2.5rem, 4.5vw, 5rem);
     background: linear-gradient(to right, #F44E77, #812DE2);
     -webkit-background-clip: text;
@@ -30,23 +30,23 @@
     font-weight: 900;
 }
 
-#second-h1 {
+#second_h1 {
     font-size: clamp(2.5rem, 3.5vw, 5rem);
     color: #CAD6F1;
     margin-bottom: 3rem;
 }
 
-.container-letft-description {
+.container_letft_description {
     width: 100%;
     margin-bottom: 3rem;
 }
 
-.container-letft-description > p {
+.container_letft_description > p {
     color: #fff;
     font-size: 1.6rem;
 }
 
-#btn-description {
+#btn_description {
     height: 5rem;
     width: 20rem;
     background-color: #121139;
@@ -60,12 +60,12 @@
     border: none;
 }
 
-#btn-description > a {
+#btn_description > a {
     text-decoration: none;
     color: #fff;
 }
 
-#btn-description::before {
+#btn_description::before {
     content: "";
     position: absolute;
     width: 300px;
@@ -77,7 +77,7 @@
     z-index: -1;
 }
 
-#btn-description::after {
+#btn_description::after {
     content: "";
     position: absolute;
     background-color: #121139;
@@ -87,7 +87,7 @@
 }
 
 /* Estilos no container direito */
-.container-right {
+.container_right {
     width: 50%;
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@
     padding: 0 3rem;
 }
 
-.container-right > img {
+.container_right > img {
     max-width: 100%;
     margin-top: 10rem;
     background: linear-gradient(to right, #F44E77 0%, #F44E77 50%, #812DE2 50%, #812DE2 100%);
@@ -116,7 +116,7 @@
     padding: 5rem;
 }
 
-.clients-logo {
+.clients_logo {
     width: 15rem;
     height: 5rem;
     display: flex;
@@ -126,7 +126,7 @@
 }
 
 /* Section de estátisticas */
-.section-analytics {
+.section_analytics {
     width: 100%;
     display: flex;
     align-items: center;
@@ -134,13 +134,13 @@
     flex-direction: column;
 }
 
-.section-analytics > h1 {
+.section_analytics > h1 {
     font-size: clamp(2rem, 2.5vw, 3rem);
     color: #CAD6F1;
     margin-top: 10rem;
 }
 
-.section-analytics-wrapper {
+.section_analytics_wrapper {
     width: 80%;
     display: flex;
     align-items: center;
@@ -149,11 +149,11 @@
     flex-wrap: wrap;
 }
 
-.section-container-left > img {
+.section_container_left > img {
     width: 100%;
 }
 
-.section-container-right {
+.section_container_right {
     width: 35%;
     display: flex;
     justify-content: center;
@@ -161,18 +161,18 @@
     flex-direction: column;
 }
 
-.container-right-description > h1 {
+.container_right_description > h1 {
     color: #FFFF;
     font-size: 2rem;
     margin-bottom: 3rem;
 }
 
-.container-right-description > p {
+.container_right_description > p {
     color: #F2F6FF;
     font-size: 2rem;
 }
 
-.container-right-img {
+.container_right_img {
     margin-top: 10rem;
     display: flex;
     justify-content: space-between;
@@ -180,37 +180,37 @@
     flex-wrap: wrap;
 }
 
-.container-right-img > img {
+.container_right_img > img {
     max-width: 100%;
 }
 
 @media (max-width: 995px) {
-    .container-left, .container-right {
+    .container_left, .container_right {
         width: 100%;
     }
 }
 
 @media (max-width: 1400px) {
-    .section-container-right {
+    .section_container_right {
         width: 100%;
     }
     
-    .section-container-left {
+    .section_container_left {
         margin-bottom: 5rem;
     }
     
-    .container-right-img {
+    .container_right_img {
         justify-content: space-evenly;
         margin-bottom: 5rem;
     }
     
-    .container-right-img > img {
+    .container_right_img > img {
         padding: 1rem 0;
     }
 }
 
 @media (max-width: 250px) {
-    #btn-description {
+    #btn_description {
         width: 100%;
     }
 }

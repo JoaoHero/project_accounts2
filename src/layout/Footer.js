@@ -1,15 +1,16 @@
+import styles from "../assets/css/layout/footer/footer.module.css"
 import Logo from "../components/Logo";
 
 
 function Footer() {
     return(
-        <footer className="footer">
-            <div className="footer-wrapper">
-                <div className="logo-footer">
-                    <Logo id="logo" />
+        <footer className={styles.footer}>
+            <div className={styles.footer_wrapper}>
+                <div className={styles.logo_footer}>
+                    <Logo id={styles.logo} />
                 </div>
 
-                <div className="footer-links">
+                <div className={styles.footer_links}>
                     <div>
                         <h2>Suporte</h2>
                         <ul>
@@ -53,7 +54,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div className="copyright">
+            <div className={styles.copyright}>
                 <p>© 2023 Todos os direitos reservados</p>
             </div>
         </footer>

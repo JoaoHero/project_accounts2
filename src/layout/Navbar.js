@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"
+import styles from "../assets/css/layout/navbar/navbar.module.css";
 
 import Logo from "../components/Logo";
 import Container from "../components/Container";
@@ -19,16 +20,16 @@ function Navbar() {
 
     return(
         <Container>
-            <div className="navbar">
+            <div className={styles.navbar}>
                 <div className="logo">
                     <Link to="/"><Logo /></Link>
                 </div>
 
-                <div className="navbar-mobile" onClick={handleClick}>
+                <div className={styles.navbar_mobile} onClick={handleClick}>
                     <IoMenuSharp />
                 </div>
 
-                <div className="navbar-itens" style={{ display: display ? "none" : "block"  }}>
+                <div className={styles.navbar_itens} style={{ display: display ? "none" : "block"  }}>
                     <ul>
                         <li><Link to="/"><FaHome />Home</Link></li>
                         <li><Link to="/about"><FaBullhorn />Sobre</Link></li>
