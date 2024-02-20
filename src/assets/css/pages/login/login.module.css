@@ -3,7 +3,7 @@
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    background-color: #6C63FF;
+    background-color: #fff;
 }
 
 .logo_home {
@@ -32,10 +32,10 @@
 }
 
 .login_form {
-    height: 80rem;
-    width: 60rem;
+    max-height: 80rem;
+    max-width: 60rem;
     border-radius: 5rem;
-    background-color: #FCFCFC;
+    background-color: #fff;
 }
 
 .login_form_img {
@@ -109,6 +109,11 @@
     .login_form_options {
         width: 20rem;
         height: 3rem;
+    }
+
+    #login_btn {
+        width: 20rem;
+        height: 4rem;
     }
 
     .login_form_img {
