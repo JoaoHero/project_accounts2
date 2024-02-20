@@ -50,7 +50,7 @@ function Register() {
                             <Form name="cpf" type="text" placeholder="Informe seu CPF" onChange={(event) => setCpf(event.target.value)} icon={<FaAddressCard />}/>
                             <Form name="password" type="password" placeholder="Crie uma senha forte" onChange={(event) => setPassword(event.target.value)} icon={<CiLock />} />
                             
-                            <input id={styles.register_btn} name="btn" type="submit" value="Entrar" />
+                            <input id={styles.register_btn} name="btn" type="submit" value="Cadastrar" />
 
                             <span>Lembrou de sua conta ? <a href="/login">Entre já</a></span>
                         </form>
