@@ -1,10 +1,12 @@
+import Toast from "../components/Toast";
+
 function loginService({ email, password }) {
 
     const user = {
         email: email,
         password: password
     }
-
+    
     fetch("http://localhost:8080/login", {
         method: 'POST',
         headers: { 
@@ -15,11 +17,17 @@ function loginService({ email, password }) {
         const error = jsonBody.error;
         const message = jsonBody.message;
 
-        console.log(error);
-        console.log(message);
+        if(error) {
+            Toast({ error: true, message });
+        }else {
+            Toast({ error: false, message });
+        }
 
     }).catch((err) => {
-        console.log("Erro ao tentar se conectar com a rota POST", err);
+            Toast({ 
+                error: true,
+                message: err
+            });
     });
 };
 
