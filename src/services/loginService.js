@@ -18,13 +18,16 @@ function loginService({ email, password }) {
         const message = jsonBody.message;
 
         if(error) {
-            Toast({ error: false, message });
-        }else {
             Toast({ error: true, message });
+        }else {
+            Toast({ error: false, message });
         }
 
     }).catch((err) => {
-            Toast({err});
+            Toast({ 
+                error: true,
+                message: err
+            });
     });
 };
 

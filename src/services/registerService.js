@@ -1,3 +1,5 @@
+import Toast from "../components/Toast";
+
 function registerService({ name, email, cpf, password}) {
 
     const user = {
@@ -17,11 +19,17 @@ function registerService({ name, email, cpf, password}) {
         const error = jsonBody.error;
         const message = jsonBody.message;
 
-        console.log(error)
-        console.log(message)
+        if(error) {
+            Toast({ error: true, message });
+        }else {
+            Toast({ error: false, message });
+        }
 
     }).catch((err) => {
-        console.log("Erro ao tentar se conectar com a rota POST", err);
+        Toast.error({
+            error: true,
+            message: err
+        })
     });
 };
 
