@@ -1,7 +1,7 @@
 import styles from "../assets/css/pages/login/login.module.css"
 import Container from "../components/Container";
 import Logo from "../components/Logo";
-import Form from "../components/Form"
+import Form from "../components/Form";
 import FormImgDinamic from "../components/FormImg";
 import loginService from "../services/loginService";
 import { useState } from "react";

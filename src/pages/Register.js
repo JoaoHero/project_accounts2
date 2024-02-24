@@ -10,7 +10,7 @@ import { MdPerson } from "react-icons/md";
 import { FaAddressCard } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { CiLock } from "react-icons/ci";
-import registerImg from "../assets/img/img-pages/transaction-img.jpg"
+import registerImg from "../assets/img/img-pages/transaction-img.jpg";
 
 
 function Register() {
