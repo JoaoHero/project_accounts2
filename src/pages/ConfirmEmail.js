@@ -2,13 +2,23 @@ import styles from "../assets/css/pages/confirmEmail/confirmEmail.module.css";
 import Container from "../components/Container";
 import Logo from "../components/Logo";
 import Form from "../components/Form";
-import loginService from "../services/loginService";
+
+// import loginService from "../services/loginService";
 import { useState } from "react";
 
-import companyImg from "../assets/img/img-pages/companyImg.jpg";
-import confirmEmailImg from "../assets/img/img-pages/confirmEmailImg.png";
+import companyImg from "../assets/img/img-pages/company.jpg";
+import drawImg from "../assets/img/img-pages/drawImg.png";
 
 function ConfirmEmail() {
+
+    const [validationCode, setValidationCode] = useState("");
+
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        console.log(validationCode);
+    };
+
     return(
         <Container>
             <main className={styles.main}>
@@ -24,7 +34,7 @@ function ConfirmEmail() {
                     <div className={styles.form}>
 
                         <div className={styles.form_img}>
-                            <img src={confirmEmailImg} alt="confirm-email-img" />
+                            <img src={drawImg} alt="confirm-email-img" />
                         </div>
 
                         <div className={styles.form_description}>
@@ -32,8 +42,8 @@ function ConfirmEmail() {
                             <p>Por favor, informe o código de segurança enviado para o seu email</p>
                         </div>
 
-                        <form >
-                            <Form name="code" type="code" placeholder="Informe o código de 9 digitos" />
+                        <form onSubmit={handleSubmit}>
+                            <Form name="code" type="code" placeholder="Informe o código de 9 digitos" onChange={(event) => setValidationCode(event.target.value)}/>
 
                             <input id={styles.btn} name="btn" type="submit" value="Validar" />
                         </form>

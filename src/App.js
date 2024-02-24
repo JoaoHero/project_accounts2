@@ -3,6 +3,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ConfirmEmail from "./pages/ConfirmEmail";
+
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -16,6 +19,7 @@ function App() {
                 <Route path="/contact" element=""></Route>
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/register" element={<Register />}></Route>
+                <Route path="/confirm-email" element={<ConfirmEmail />}></Route>
             </Routes>
       </Router>
 
