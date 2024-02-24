@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Logo from "../components/Logo";
 import Form from "../components/Form";
 
-// import loginService from "../services/loginService";
+import confirmEmailService from "../services/confirmEmailService";
 import { useState } from "react";
 
 import companyImg from "../assets/img/img-pages/company.jpg";
@@ -11,12 +11,12 @@ import drawImg from "../assets/img/img-pages/drawImg.png";
 
 function ConfirmEmail() {
 
-    const [validationCode, setValidationCode] = useState("");
+    const [emailCode, setEmailCode] = useState("");
 
     function handleSubmit(event) {
         event.preventDefault();
 
-        console.log(validationCode);
+        confirmEmailService({ emailCode })
     };
 
     return(
@@ -43,7 +43,7 @@ function ConfirmEmail() {
                         </div>
 
                         <form onSubmit={handleSubmit}>
-                            <Form name="code" type="code" placeholder="Informe o código de 9 digitos" onChange={(event) => setValidationCode(event.target.value)}/>
+                            <Form name="emailCode" type="code" placeholder="Informe o código de 9 digitos" onChange={(event) => setEmailCode(event.target.value)}/>
 
                             <input id={styles.btn} name="btn" type="submit" value="Validar" />
                         </form>
