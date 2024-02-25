@@ -23,7 +23,11 @@ function registerService({ name, email, cpf, password}) {
             Toast({ error: true, message });
         }else {
             Toast({ error: false, message });
-        }
+
+            setTimeout(() => {
+                window.location = "/confirm-email";
+            }, 500);
+        };
 
     }).catch((err) => {
         Toast.error({
