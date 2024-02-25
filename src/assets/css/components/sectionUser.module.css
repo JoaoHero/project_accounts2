@@ -1,0 +1,162 @@
+.user_options {
+    height: 100%;
+    width: 35rem;
+    background-color: #000;
+    position: relative;
+}
+
+.user_info {
+    background-color: rgb(90, 29, 140);
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.user_photo {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: rgb(129, 50, 197);
+    margin: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.user_photo > svg {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.user_photo:hover {
+    background-color: rgb(118, 46, 180);
+}
+
+.user_name {
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.user_name > p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.user_name:hover {
+    color: #e0dfdf;
+}
+
+.user_options_itens {
+    height: 20rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.user_options_itens > div > a:hover {
+    color: #b3b0b0;
+}
+
+.user_itens_tittle {
+    display: flex;
+    width: 25rem;
+    height: 4rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    margin-left: 2.5rem;
+    align-items: center;
+}
+
+.user_itens_tittle > svg {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: rgb(188, 132, 247);
+    vertical-align: middle;
+}
+
+.user_itens_tittle > a {
+    color: rgb(188, 132, 247);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.user_itens_subTittle {
+    width: 25rem;
+    margin-left: 5rem;
+}
+
+.user_itens_subTittle > a{
+    color: #ccc;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.user_itens_itens {
+    width: 25rem;
+    margin-left: 5rem;
+    padding: 0rem 3rem;
+    margin-top: 1rem;
+}
+
+.user_itens_itens > a {
+    font-size: 1.3rem;
+    color: #ccc;
+    font-weight: 600;
+}
+
+.user_itens_itens > svg {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.64);
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+
+.logOut {
+    height: 10rem;
+    width: 25rem;
+    position: absolute;
+    bottom: 0;
+    margin-left: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logOut_itens {
+    margin-top: 1rem;
+}
+
+.logOut_itens > svg {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.64);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.logOut_itens > a {
+    font-size: 1.5rem;
+    color: #ccc;
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
+
+.logOut > div > a:hover{
+    color: #b3b0b0;
+}
