@@ -20,13 +20,18 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
 
 <div>
 
+
 ![image](https://github.com/JoaoHero/project_accounts2/assets/101435425/f7839076-3032-4bd5-95da-489d1b9fb3b1)
+
 
 ![image](https://github.com/JoaoHero/project_accounts2/assets/101435425/5295f2c8-35a6-41e5-8c23-0c62f2ce3192)
 
-![image](https://github.com/JoaoHero/project_accounts2/assets/101435425/0350b484-d7a4-4a47-9444-72d22f1b7a53)
 
-![image](https://github.com/JoaoHero/project_accounts2/assets/101435425/84712e15-97b0-4b5c-941c-e24ea3cd80b6)
+![image](https://github.com/JoaoHero/project_accounts2/assets/101435425/ed0a28d7-45fb-43d8-ad88-971790dc8db0)
+
+
+![image](https://github.com/JoaoHero/project_accounts2/assets/101435425/63bfb8eb-8d75-4da9-87f5-47e42b179511)
+
 
 
 </div>
