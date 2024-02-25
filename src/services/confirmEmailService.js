@@ -23,7 +23,7 @@ function confirmEmailService({ emailCode }) {
 
             setTimeout(() => {
                 window.location = "/";
-            }, 2000);
+            }, 500);
         }
 
     }).catch((err) => {
