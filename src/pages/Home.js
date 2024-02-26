@@ -1,7 +1,7 @@
 import styles from "../assets/css/pages/home/home.module.css";
 import Navbar from "../layout/Navbar";
 import Container from "../components/Container";
-import SectionApp from "../components/SectionApp";
+import SectionApp from "../components/sections/SectionApp";
 import Footer from "../layout/Footer";
 
 import creditCarImg from "../assets/img/img-pages/card.png";

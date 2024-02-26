@@ -1,8 +1,8 @@
-import styles from "../assets/css/components/sectionApp.module.css"
+import styles from "../../assets/css/components/sectionApp.module.css"
 
-import iphoneImg from "../assets/img/img-pages/Iphones.png";
-import badgeAppleImg from "../assets/img/img-pages/badgeApple.png";
-import badgeAndroidImg from "../assets/img/img-pages/badgeAndroid.png";
+import iphoneImg from "../../assets/img/img-pages/Iphones.png";
+import badgeAppleImg from "../../assets/img/img-pages/badgeApple.png";
+import badgeAndroidImg from "../../assets/img/img-pages/badgeAndroid.png";
 
 function SectionApp() {
     return(

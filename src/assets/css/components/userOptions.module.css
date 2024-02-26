@@ -2,7 +2,9 @@
     height: 100%;
     width: 35rem;
     background-color: #000;
-    position: relative;
+    border-right: 1px solid rgb(34, 34, 34);
+    position: fixed;
+    z-index: 2;
 }
 
 .user_info {
@@ -122,7 +124,6 @@
     margin-right: 1rem;
 }
 
-
 .logOut {
     height: 10rem;
     width: 25rem;
@@ -159,4 +160,39 @@
 
 .logOut > div > a:hover{
     color: #b3b0b0;
+}
+
+@media (max-width: 1000px) {
+    .user_options  {
+        width: 8rem;
+        transition: all .2s;
+    }
+
+    /* Oculta os itens quando a largura da tela for menor ou igual a 1000px */
+    .user_itens_subTittle,
+    .user_itens_itens,
+    .user_name,
+    .logOut,
+    .user_itens_tittle > a {
+        display: none;
+    }
+
+    /* Exibe os itens quando .user_options estiver em :hover */
+    .user_options:hover .user_itens_subTittle,
+    .user_options:hover .user_itens_itens,
+    .user_options:hover .user_name,
+    .user_options:hover .logOut,
+    .user_options:hover .user_itens_tittle > a {
+        display: flex;
+    }
+
+    .user_options:hover  {
+        width: 35rem;
+    }
+}
+
+@media (max-width: 835px) {
+    .user_options  {
+        display: none;
+    }
 }

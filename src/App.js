@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ConfirmEmail from "./pages/ConfirmEmail";
-import UserAccount from "./pages/UserAccount";
+import UserTransactions from "./pages/UserTransactions";
 
 
 import { ToastContainer } from 'react-toastify';
@@ -21,7 +21,7 @@ function App() {
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/register" element={<Register />}></Route>
                 <Route path="/confirm-email" element={<ConfirmEmail />}></Route>
-                <Route path="/userAccount" element={<UserAccount />}></Route>
+                <Route path="/userTransactions" element={<UserTransactions />}></Route>
             </Routes>
       </Router>
 
