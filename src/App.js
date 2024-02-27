@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PrivateRoutes from "./utils/PrivateRoutes";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/Login";
@@ -21,7 +22,9 @@ function App() {
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/register" element={<Register />}></Route>
                 <Route path="/confirm-email" element={<ConfirmEmail />}></Route>
-                <Route path="/userTransactions" element={<UserTransactions />}></Route>
+                <Route element={<PrivateRoutes />}>
+                  <Route path="/userTransactions" element={<UserTransactions />}></Route>
+                </Route>
             </Routes>
       </Router>
 

@@ -2,7 +2,7 @@ import styles from "../../assets/css/components/userOptions.module.css";
 
 import { FaRegUser } from "react-icons/fa6";
 
-function UserOptions() {
+function UserOptions({ name }) {
     return(
             <section className={styles.user_options}>
                 <div className={styles.user_info}>
@@ -12,7 +12,7 @@ function UserOptions() {
                     </div>
 
                     <div className={styles.user_name}>
-                        <p>Olá, usuário</p>
+                        <p>{name}</p>
                     </div>
                 </div>
 

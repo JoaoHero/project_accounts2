@@ -8,16 +8,13 @@ import { SiPix } from "react-icons/si";
 import { CiBarcode } from "react-icons/ci";
 import { FaMoneyCheckAlt } from "react-icons/fa";
 
-
-
-
 function UserTransactions() {
     return(
         <Container>
             <main className={styles.main}>
 
                 <div className={styles.container_left}>
-                    <UserOptions />
+                    <UserOptions name="usuário" />
                 </div>
 
                 <div className={styles.container_right}>

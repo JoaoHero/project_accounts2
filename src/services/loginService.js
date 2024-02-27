@@ -17,11 +17,20 @@ function loginService({ email, password }) {
         const error = jsonBody.error;
         const message = jsonBody.message;
 
+
         if(error) {
-            Toast({ error: true, message });
+            return Toast({ error: true, message });
         }else {
+            const token = jsonBody.token;
+            // Armazenar o token no localStorage (ou sessionStorage)
+            localStorage.setItem('token', token);
+
             Toast({ error: false, message });
-        }
+
+            return setTimeout(() => {
+                window.location = "/userTransactions";
+            }, 500);
+        };
 
     }).catch((err) => {
             Toast({ 
