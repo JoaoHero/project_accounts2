@@ -22,7 +22,7 @@ function confirmEmailService({ emailCode }) {
             Toast({ error: false, message });
 
             setTimeout(() => {
-                window.location = "/";
+                window.location = "/userTransactions";
             }, 500);
         }
 

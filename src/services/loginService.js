@@ -16,14 +16,16 @@ function loginService({ email, password }) {
     }).then((response) => response.json()).then((jsonBody) => {
         const error = jsonBody.error;
         const message = jsonBody.message;
+        const userName = jsonBody.name;
 
 
         if(error) {
             return Toast({ error: true, message });
         }else {
             const token = jsonBody.token;
-            // Armazenar o token no localStorage (ou sessionStorage)
+            // Armazenar o token no localStorage
             localStorage.setItem('token', token);
+            localStorage.setItem('name', userName);
 
             Toast({ error: false, message });
 

@@ -2,6 +2,9 @@ import styles from "../assets/css/pages/userAccount/userTransactions.module.css"
 import Container from "../components/Container";
 import UserOptions from "../components/sections/UserOptions";
 import UserAccountTittle from "../components/sections/UserAccountTittle";
+import userTransactionsService from "../services/userTransactionsService";
+
+import { useState, useEffect } from "react"
 
 import { RiLuggageDepositFill } from "react-icons/ri";
 import { SiPix } from "react-icons/si";
@@ -9,12 +12,40 @@ import { CiBarcode } from "react-icons/ci";
 import { FaMoneyCheckAlt } from "react-icons/fa";
 
 function UserTransactions() {
+
+    const [balance, setBalance] = useState(null);
+    const [name, setName] = useState(null);
+
+    useEffect(() => {
+
+        const name  = localStorage.getItem("name");
+
+        setName(name);
+
+        const fetchData = async () => {
+            try {
+                const dataFromAPI = await userTransactionsService();
+
+                const { balance } = dataFromAPI
+
+                setBalance(balance);
+
+            } catch (error) {
+                // Trate erros de requisição da API conforme necessário
+                console.error('Erro ao buscar dados da API:', error);
+            }
+        };
+
+        fetchData(); // Chama a função de serviço quando o componente é montado
+
+    }, []);
+
     return(
         <Container>
             <main className={styles.main}>
 
                 <div className={styles.container_left}>
-                    <UserOptions name="usuário" />
+                    <UserOptions name={name} />
                 </div>
 
                 <div className={styles.container_right}>
@@ -29,7 +60,7 @@ function UserTransactions() {
 
                             <div className={styles.account_ballance_value}>
                                 <p>Saldo Disponível</p>
-                                <p>R$ 2.007,08</p>
+                                <p>R$ {balance}</p>
                             </div>
                         </div>
 
