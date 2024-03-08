@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import UserOptions from "../components/sections/UserOptions";
 import UserAccountTittle from "../components/sections/UserAccountTittle";
 import userTransactionsService from "../services/userTransactionsService";
+import PopUp from "../components/PopUp";
 
 import { useState, useEffect } from "react"
 
@@ -40,6 +41,15 @@ function UserTransactions() {
 
     }, []);
 
+    const [popUpShow, setPopUpShow] = useState(false);
+    const [popUpType, setPopUpType] = useState();
+
+    function handleClick(divName) {
+        setPopUpShow(!popUpShow);
+
+        setPopUpType(divName)
+    };
+
     return(
         <Container>
             <main className={styles.main}>
@@ -47,7 +57,6 @@ function UserTransactions() {
                 <div className={styles.container_left}>
                     <UserOptions name={name} />
                 </div>
-
                 <div className={styles.container_right}>
                     <UserAccountTittle sectionTittle="transactions" tittle="Inicio" />
 
@@ -72,25 +81,30 @@ function UserTransactions() {
                         </div>
 
                         <div className={styles.account_user_itens_wrapper}>
-                            <div className={styles.account_user_itens}>
+
+                            <div className={styles.account_user_itens} onClick={() => handleClick("deposit")}>
                                 <RiLuggageDepositFill />
                                 <p>Depósito</p>
                             </div>
 
-                            <div className={styles.account_user_itens}>
+                            <div className={styles.account_user_itens} onClick={() => handleClick("pix")}>
                                 <SiPix />
                                 <p>Pix</p>
                             </div>
 
-                            <div className={styles.account_user_itens}>
+                            <div className={styles.account_user_itens} onClick={() => handleClick("pay")}>
                                 <CiBarcode />
                                 <p>Pagar</p>
                             </div>
-                            <div className={styles.account_user_itens}>
+
+                            <div className={styles.account_user_itens} onClick={() => handleClick("loan")}>
                                 <FaMoneyCheckAlt />
                                 <p>Empréstimo</p>
-                            </div>                           
+                            </div>
+
+                            {popUpShow && <PopUp type={popUpType} />}
                         </div>
+
                     </section>
 
                     <section className={styles.more_services}>
@@ -139,8 +153,8 @@ function UserTransactions() {
                         </div>
                     </section>
                 </div>
-
             </main>
+
         </Container>
     );
 };
