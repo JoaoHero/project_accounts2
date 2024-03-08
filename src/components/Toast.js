@@ -1,11 +1,8 @@
+// Importando o conteúdo da lib ToastFy
 import { Bounce, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Toast({ error, message }) {
-
-    console.log(error)
-    console.log(message)
-
     if(error) {
         toast.error(`${message}`, {
             position: "top-right",

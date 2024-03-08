@@ -1,39 +1,48 @@
+// Importando as regras de estilos e os hooks
 import styles from "../assets/css/pages/userAccount/userTransactions.module.css";
+import { useState, useEffect } from "react";
+
+// Impotando os components
 import Container from "../components/Container";
 import UserOptions from "../components/sections/UserOptions";
 import UserAccountTittle from "../components/sections/UserAccountTittle";
 import userTransactionsService from "../services/userTransactionsService";
 import PopUp from "../components/PopUp";
 
-import { useState, useEffect } from "react"
-
+// Importando as imagens do React Icons
 import { RiLuggageDepositFill } from "react-icons/ri";
 import { SiPix } from "react-icons/si";
 import { CiBarcode } from "react-icons/ci";
 import { FaMoneyCheckAlt } from "react-icons/fa";
 
-function UserTransactions() {
 
+function UserTransactions() {
+    // Controlando o estado do saldo do usuário
     const [balance, setBalance] = useState(null);
+    // Controlando o estado do nome do usuário
     const [name, setName] = useState(null);
 
     useEffect(() => {
-
+        // Atribuindo o nome do usuário salvo no localStorage a uma variável
         const name  = localStorage.getItem("name");
-
+        // Atribuindo o valor da variável ao state
         setName(name);
 
+        // Fazendo a chamada na API
         const fetchData = async () => {
             try {
+                // Aguardando os dados recuperados da API
                 const dataFromAPI = await userTransactionsService();
 
+                // Atribuindo o saldo do usuário buscado no servidor à uma variável
                 const { balance } = dataFromAPI
 
+                // Atribuindo o valor da variável ao state
                 setBalance(balance);
 
             } catch (error) {
-                // Trate erros de requisição da API conforme necessário
-                console.error('Erro ao buscar dados da API:', error);
+                // Parando o processamento e informando o erro
+                return console.error('Erro ao buscar dados da API:', error);
             }
         };
 
@@ -41,12 +50,17 @@ function UserTransactions() {
 
     }, []);
 
+    // Controlando o estado do popUp
     const [popUpShow, setPopUpShow] = useState(false);
+    // Controlando o estado do tipo do popUp
     const [popUpType, setPopUpType] = useState();
 
+    // Função para controlar o estado do popUp quando clicado
     function handleClick(divName) {
+        // Alterando o estado do popUp
         setPopUpShow(!popUpShow);
 
+        // Atribuindo o valor do argumento ao state
         setPopUpType(divName)
     };
 
@@ -69,6 +83,7 @@ function UserTransactions() {
 
                             <div className={styles.account_ballance_value}>
                                 <p>Saldo Disponível</p>
+                                {/* Mostrando o saldo do usuário na tela */}
                                 <p>R$ {balance}</p>
                             </div>
                         </div>
@@ -102,6 +117,7 @@ function UserTransactions() {
                                 <p>Empréstimo</p>
                             </div>
 
+                            {/* Caso o valor do popUp seja verdadeiro, buscar o tipo e montar o componente na tela */}
                             {popUpShow && <PopUp type={popUpType} />}
                         </div>
 

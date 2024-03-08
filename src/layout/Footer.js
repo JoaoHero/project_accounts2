@@ -1,4 +1,5 @@
-import styles from "../assets/css/layout/footer/footer.module.css"
+// Importando os components
+import styles from "../assets/css/layout/footer/footer.module.css";
 import Logo from "../components/Logo";
 
 

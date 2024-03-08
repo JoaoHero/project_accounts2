@@ -1,12 +1,12 @@
-// Importando as regras de estilos
+// Importando as regras de estilos e os hooks
 import styles from "../assets/css/components/popUp.module.css";
-// Importando o service do popUp, conectando com a API
-import popUpService from "../services/popUpService";
 import { useState, useEffect } from "react";
 
-// Component Logo
+// Importando os components
+import popUpService from "../services/popUpService";
 import Logo from "../components/Logo";
-// Icone de seta, utilizando no btn
+
+// Importando as imagens do React Icons
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 
 function PopUp({ type }) {

@@ -1,4 +1,7 @@
+// Importando as regras de estilos
 import styles from "../assets/css/components/formImg.module.css";
+
+// Importando os components
 import FormImgDinamic from "../assets/img/img-pages/adventure_map_login_img.png";
 
 function FormImg({ tittle, phrase }) {

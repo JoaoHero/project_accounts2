@@ -7,7 +7,7 @@ import Register from "./pages/Register";
 import ConfirmEmail from "./pages/ConfirmEmail";
 import UserTransactions from "./pages/UserTransactions";
 
-
+// Importando o conteúdo da lib ToastFy
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

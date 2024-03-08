@@ -1,11 +1,16 @@
+// Importando as regras de estilos e os hooks
 import styles from "../assets/css/pages/register/register.module.css";
+import { useState } from "react";
+
+// Importando os components
 import Container from "../components/Container";
 import Logo from "../components/Logo";
 import Form from "../components/Form"
 import FormImgDinamic from "../components/FormImg";
 import registerService from "../services/registerService"
-import { useState } from "react";
 
+
+// Importando as imagens do React Icons
 import { MdPerson } from "react-icons/md";
 import { FaAddressCard } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
@@ -15,16 +20,19 @@ import registerImg from "../assets/img/img-pages/transaction-img.jpg";
 
 function Register() {
 
+    // Controlando o estado dos inputs
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [cpf, setCpf] = useState("");
     const [password, setPassword] = useState("");
 
+    // Função que coleta os valores do input e atribui ao botão
     function handleSubmit(event) {
         event.preventDefault();
 
-        registerService({ name, email, cpf, password });
-    }
+        // Parando o processamento, chamando a função do serviço Fetch conectando a API
+        return registerService({ name, email, cpf, password });
+    };
 
     return(
         <Container>

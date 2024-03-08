@@ -1,5 +1,7 @@
-import Container from "../components/Container"
-import Navbar from "../layout/Navbar"
+// Importando os components
+import Container from "../components/Container";
+import Navbar from "../layout/Navbar";
+
 
 function About() {
     return(
@@ -9,8 +11,9 @@ function About() {
             <main className="">
                 <h1>Página Sobre</h1>
             </main>
+
         </Container>
     );
 };
 
-export default About
+export default About;

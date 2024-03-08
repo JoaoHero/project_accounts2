@@ -1,24 +1,32 @@
-import styles from "../assets/css/pages/login/login.module.css"
+// Importando as regras de estilos e os hooks
+import styles from "../assets/css/pages/login/login.module.css";
+import { useState } from "react";
+
+// Importando os components
 import Container from "../components/Container";
 import Logo from "../components/Logo";
 import Form from "../components/Form";
 import FormImgDinamic from "../components/FormImg";
 import loginService from "../services/loginService";
-import { useState } from "react";
 
+
+// Importando as imagens do React Icons
 import { CiLock } from "react-icons/ci";
 import { MdOutlineMail } from "react-icons/md";
 
 function Login() {
 
+    // Controlando o estado dos inputs
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    // Função que coleta os valores do input e atribui ao botão
     function handleSubmit(event) {
         event.preventDefault();
 
-        loginService({ email, password})
-    }
+        // Parando o processamento, chamando a função do serviço Fetch conectando a API
+        return loginService({ email, password})
+    };
 
     return(
         <Container>

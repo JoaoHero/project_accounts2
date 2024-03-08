@@ -1,22 +1,27 @@
+// Importando as regras de estilos e os hooks
 import styles from "../assets/css/pages/confirmEmail/confirmEmail.module.css";
+import { useState } from "react";
+
+// Importando os components
 import Container from "../components/Container";
 import Logo from "../components/Logo";
 import Form from "../components/Form";
-
 import confirmEmailService from "../services/confirmEmailService";
-import { useState } from "react";
 
+// Importando as imagens do React Icons
 import companyImg from "../assets/img/img-pages/company.jpg";
 import drawImg from "../assets/img/img-pages/drawImg.png";
 
 function ConfirmEmail() {
-
+    // Controlando o estado do input
     const [emailCode, setEmailCode] = useState("");
 
+    // Função que coleta os valores do input e atribui ao botão
     function handleSubmit(event) {
         event.preventDefault();
 
-        confirmEmailService({ emailCode })
+        // Parando o processamento, chamando a função do serviço Fetch conectando a API
+        return confirmEmailService({ emailCode })
     };
 
     return(

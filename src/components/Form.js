@@ -1,3 +1,4 @@
+// Importando as regras de estilos
 import styles from "../assets/css/components/form.module.css"
 
 function Form({ name, type, placeholder, onChange, icon }) {

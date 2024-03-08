@@ -1,9 +1,13 @@
+// Importando as regras de estilos
 import styles from "../assets/css/pages/home/home.module.css";
+
+// Importando os components
 import Navbar from "../layout/Navbar";
 import Container from "../components/Container";
 import SectionApp from "../components/sections/SectionApp";
 import Footer from "../layout/Footer";
 
+// Importando as imagens do React Icons
 import creditCarImg from "../assets/img/img-pages/card.png";
 import logoClientImg from "../assets/img/logos/LogoClient.png";
 import graphicImg from "../assets/img/img-pages/graphic.png";
@@ -92,4 +96,4 @@ function Home() {
     );
 };
 
-export default Home
+export default Home;
