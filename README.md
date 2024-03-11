@@ -23,6 +23,19 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
 * Pagar: É possível simplemente usar seu saldo para pagar uma quantia de dinheiro.
 * Empréstimos: É possível pegar um empréstimo no valor máximo de 10 mil reais por conta.
 
+## Validação de E-mail
+
+O sistema de validação de e-mail é uma camada de segurança implementada para garantir que apenas usuários com e-mails válidos possam acessar suas contas. Quando um usuário se registra no sistema, um e-mail de confirmação é enviado para o endereço de e-mail fornecido. Para completar o processo de registro, o usuário deve clicar no link de confirmação contido no e-mail. Somente após a confirmação bem-sucedida do e-mail, o usuário poderá fazer login na conta.
+
+#### Fluxo de Funcionamento
+
+1. O usuário se registra no sistema fornecendo um endereço de e-mail.
+2. Um e-mail de confirmação é enviado para o endereço de e-mail fornecido.
+3. O usuário acessa sua caixa de entrada e clica no link de confirmação.
+4. Após a confirmação bem-sucedida, o e-mail é considerado válido e o usuário pode fazer login na conta.
+
+Esta funcionalidade ajuda a garantir a segurança das contas dos usuários, mitigando o risco de acessos não autorizados.
+
 # Demonstração do Projeto
 
 <div>
