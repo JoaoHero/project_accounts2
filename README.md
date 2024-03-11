@@ -16,6 +16,13 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
 
 * Entrar: Seção que possíbilita entrar em uma conta existente ou criar uma nova
 
+## Funcionabilidades
+
+* Depósito: É possível realizar um depósito dentro da sua conta.
+* Pix: É possível realizar transações de pix entre as contas cadastradas no banco.
+* Pagar: É possível simplemente usar seu saldo para pagar uma quantia de dinheiro.
+* Empréstimos: É possível pegar um empréstimo no valor máximo de 10 mil reais por conta.
+
 # Demonstração do Projeto
 
 <div>
@@ -41,9 +48,12 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
 ## Tecnologias utilizadas
 
 * React
-* Css3
 * Jsx
+* Css
 * Javascript
+* MySql
+* Sequelize
+* JWT
 * Figma
 
 ## Como executar o projeto?
