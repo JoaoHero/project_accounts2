@@ -16,7 +16,7 @@ Contato: Seção criada para possibilitar o contato do usuário com o fornecedor
 
 * Entrar: Seção que possíbilita entrar em uma conta existente ou criar uma nova
 
-## Funcionabilidades
+## Funcionalidades do Banco
 
 * Depósito: É possível realizar um depósito dentro da sua conta.
 * Pix: É possível realizar transações de pix entre as contas cadastradas no banco.
