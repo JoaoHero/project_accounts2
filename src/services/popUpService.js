@@ -9,7 +9,7 @@ function popUpService({ route, value, email }) {
     };
 
     // Criando a chamada fetch
-    fetch(`191.252.191.239:8080/userTransactions${route}`, {
+    fetch(`https://b29d-191-252-191-239.ngrok-free.app/userTransactions${route}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

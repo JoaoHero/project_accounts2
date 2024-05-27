@@ -8,7 +8,7 @@ function confirmEmailService({ emailCode }) {
     };
 
     // Criando a chamada fetch
-    fetch("http://191.252.191.239:8080/confirm-email", {
+    fetch("https://b29d-191-252-191-239.ngrok-free.app/confirm-email", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
