@@ -9,7 +9,7 @@ function loginService({ email, password }) {
     };
 
     // Criando a chamada fetch
-    fetch("191.252.191.239:8080/login", {
+    fetch("http://191.252.191.239:8080/login", {
         method: 'POST',
         headers: { 
             'Content-Type': 'application/json' 

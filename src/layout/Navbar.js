@@ -38,8 +38,8 @@ function Navbar() {
                 <div className={styles.navbar_itens} style={{ display: display ? "none" : "block"  }}>
                     <ul>
                         <li><Link to="/"><FaHome />Home</Link></li>
-                        <li><Link to="/about"><FaBullhorn />Sobre</Link></li>
-                        <li><Link to="/contact"><FaComment />Contato</Link></li>
+                        <li><Link><FaBullhorn />Sobre</Link></li>
+                        <li><Link><FaComment />Contato</Link></li>
                         <li><Link to="/login"><FaUserCircle />Entrar</Link></li>
                     </ul>
                 </div>
