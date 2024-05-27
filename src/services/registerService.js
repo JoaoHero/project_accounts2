@@ -11,7 +11,7 @@ function registerService({ name, email, cpf, password}) {
     };
 
     // Criando a chamada fetch
-    fetch("http://localhost:8080/register", {
+    fetch("191.252.191.239:8080/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

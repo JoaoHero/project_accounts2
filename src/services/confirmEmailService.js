@@ -8,7 +8,7 @@ function confirmEmailService({ emailCode }) {
     };
 
     // Criando a chamada fetch
-    fetch("http://localhost:8080/confirm-email", {
+    fetch("191.252.191.239:8080/confirm-email", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

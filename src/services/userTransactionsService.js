@@ -1,6 +1,6 @@
 async function userTransactionsService() {
     try {
-        const response = await fetch('http://localhost:8080/userTransactions', {
+        const response = await fetch('191.252.191.239:8080/userTransactions', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

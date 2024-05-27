@@ -9,7 +9,7 @@ function popUpService({ route, value, email }) {
     };
 
     // Criando a chamada fetch
-    fetch(`http://localhost:8080/userTransactions${route}`, {
+    fetch(`191.252.191.239:8080/userTransactions${route}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
